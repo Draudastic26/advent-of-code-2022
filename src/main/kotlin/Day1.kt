@@ -1,8 +1,8 @@
-import java.io.File
+import utils.Input
 
 fun main() {
     println("Day 1")
-    val lines = readFileAsLinesUsingReadLines("input/1")
+    val lines = Input.readAsLines("input/1")
 
     val caloriesPerElf = mutableListOf<Collection<Int>>()
     val currentElf = mutableListOf<Int>()
@@ -22,4 +22,3 @@ fun main() {
     println("Sum of top 3: $top3Calories")
 }
 
-fun readFileAsLinesUsingReadLines(fileName: String): List<String> = File(fileName).readLines()
