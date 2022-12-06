@@ -17,8 +17,7 @@ fun main() {
 private fun findMarker(input: String, distinctCharacters: Int): Int {
     for (i in input.indices) {
         val substring = input.substring(i, i + distinctCharacters)
-        val length = substring.length
-        if (substring.toSet().size == length) return i + distinctCharacters
+        if (substring.toSet().size == substring.length) return i + distinctCharacters
     }
     return -1
 }
