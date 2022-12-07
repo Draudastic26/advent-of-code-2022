@@ -18,9 +18,7 @@ fun main() {
         "C Y" to 2,
         "C Z" to 6,
     )
-
     val scoreA = lines.sumOf { combinations[it]!! }
-
     println("Strategy A Score: $scoreA")
 
     //X lose
